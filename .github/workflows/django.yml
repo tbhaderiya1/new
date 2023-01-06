@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: Windows-10
+    runs-on: ubantu-latest
     strategy:
       max-parallel: 4
       matrix:
