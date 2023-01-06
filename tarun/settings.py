@@ -27,6 +27,7 @@ SECRET_KEY = 'django-insecure-k*ydc%wb79nd*-^b*_klg&)&f2lvphvdhgi*%wvd940sgf@ulf
 DEBUG = True
 
 ALLOWED_HOSTS = [
+     'tbhaderiya1.github.io/new'
     '127.0.0.1',
 'hello-app-316016.el.r.appspot.com',
 '127.0.0.1:8000'
