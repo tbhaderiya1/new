@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: Windows-10
     strategy:
       max-parallel: 4
       matrix:
