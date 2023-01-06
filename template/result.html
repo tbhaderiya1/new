@@ -1,0 +1,29 @@
+<head>
+<style>
+h3,table,div,form,html{font-size : 40;
+    background-color: rgb(162, 220, 255);
+    max-height: match-device;
+    max-width: match-device;
+    margin: 100 ;
+    align-items: center;}
+    th,tr, td {
+  padding: 15px;
+}
+
+</style>
+</head>
+{% extends 'base.html'%}
+
+{% block content %}
+<!div class="container">
+
+<h3>loan date is {{ld}}<br>
+calculation date is {{cd}}<br>
+Interest is  ₹{{interest}}<br>
+Amount is  ₹{{amount}}</h3>
+<div>{{strs|safe|escape}}</div>
+<form>
+<input  type ="button" onclick = "history. back()" value = "back">
+</form><!/div>
+
+{% endblock %}

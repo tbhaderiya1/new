@@ -1,0 +1,68 @@
+<html>
+ <head>
+  <style>html,table,h1{
+    max-height: match-device;
+    max-width: match-device;
+    background: lightskyblue;
+    margin: 100 ;
+
+    }
+    div,td{
+      font-size:45;
+    
+    }
+    input{
+        font-size:45;
+      background : #CAEAF4 ;
+    }
+    </style> 
+    <!link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+ </head> 
+ <body>
+   {% extends 'base.html'%} {% block content %} 
+  <div style="color: #064865" class="container"> 
+   <h1>Hello, Welcome to interest calculator</h1> 
+   <form action="add" method="post">
+     {% csrf_token %} 
+     <table>
+      <tr>
+        <td>Enter principal:</td>
+        <td><input type="number" name="num1"  required ></td>
+      </tr>
+    <tr>
+      <td>Enter interest:</td>
+       
+     <td> <input type="number" name="num2" step =0.001 required ></td>
+    </tr>
+     
+    <tr>
+     <td> Enter start date   : </td>
+    
+    
+     <td><input type="date" name="num3" width="50"  required > 
+    </td>
+    </tr>
+    <tr>
+      <td>
+      Enter last date : 
+    </td>
+    <td>
+     <input type="date" name="num4"  required > 
+    </td>
+    </tr>
+    <tr>
+      <td>Enter interval to compound intetest: </td>
+     
+    <td><input type="number" name="num5" required></td> 
+    </tr>
+    <tr>
+      <td></td>
+    <td> 
+    <input type="submit" style="width:match-parent"></td> </tr>
+    
+    
+     </table>
+   </form> 
+  </div> {% endblock %} 
+ </body>
+</html>
