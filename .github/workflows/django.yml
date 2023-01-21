@@ -27,5 +27,5 @@ jobs:
         pip install -r requirements.txt
     - name: Run Tests
       run: |
-        gunicorn -b:$PORT tarun.wsgi
+        gunicorn -b:8080 tarun.wsgi
         
