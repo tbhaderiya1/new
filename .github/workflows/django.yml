@@ -27,5 +27,5 @@ jobs:
         pip install -r requirements.txt
     - name: Run Tests
       run: |
-        gunicorn --bind 0.0.0.0:8000 tarun.wsgi
+        gunicorn --bind https://tbhaderiya1.github.io/new tarun.wsgi
         
